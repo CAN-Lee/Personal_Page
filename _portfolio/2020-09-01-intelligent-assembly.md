@@ -11,3 +11,8 @@ permalink: "/portfolio/intelligent-assembly/"
 <li>Research on the deep learning algorithms for object detection and 6-DoF object pose estimation, and on the compliant control methods for shaft-in-hole assembly.</li>
 <li>Develop the robotic assembly system with robot manipulators, 3D camera, and force sensor.</li>
 </ul>
+
+<div class="project-image-pair project-image-pair--two">
+  <img src="{{ '/images/robot_peginhole_fig1.png' | relative_url }}" alt="Gripper, force sensor, and cameras for cylindrical shaft-in-hole assembly" loading="lazy">
+  <img src="{{ '/images/robot_peginhole.gif' | relative_url }}" alt="Robotic shaft-in-hole assembly demonstration">
+</div>
