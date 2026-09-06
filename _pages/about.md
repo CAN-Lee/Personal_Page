@@ -13,7 +13,7 @@ My current research interests focus on **world models**, including visual recons
 
 ## Publications
 
-{% include publications-list.html %}
+{% include publications-list.html collapse=true %}
 
 ## Research & Development
 

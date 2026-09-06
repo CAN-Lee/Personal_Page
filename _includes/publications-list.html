@@ -1,5 +1,6 @@
 {% include base_path %}
 {% assign publications = site.publications | sort: 'date' | reverse %}
+{% assign collapsed_papers = false %}
 {% assign earlier_papers = '/publications/cylindrical-assembly/|/publications/countersunk-assembly/|/publications/debris-sensor/' | split: '|' %}
 {% for publication in publications %}
   {% assign post = publication %}
@@ -13,4 +14,10 @@
     {% assign post = current_post %}
   {% endif %}
   {% include archive-single.html %}
+  {% if include.collapse and post.permalink == '/publications/raco-slam/' and forloop.last == false %}
+    {% assign collapsed_papers = true %}
+<details class="publications-more">
+<summary>more</summary>
+  {% endif %}
 {% endfor %}
+{% if collapsed_papers %}</details>{% endif %}

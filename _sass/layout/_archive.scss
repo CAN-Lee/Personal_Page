@@ -39,6 +39,17 @@
   }
 }
 
+.publications-more {
+  margin-bottom: 12px;
+
+  > summary {
+    width: fit-content;
+    margin-bottom: 12px;
+    color: var(--global-link-color);
+    cursor: pointer;
+  }
+}
+
 .archive__subtitle {
   margin: 1.414em 0 0;
   padding-bottom: 0.5em;
