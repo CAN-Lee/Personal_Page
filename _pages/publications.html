@@ -5,17 +5,4 @@ permalink: /publications/
 author_profile: true
 ---
 
-{% include base_path %}
-{% assign publications = site.publications | sort: 'date' | reverse %}
-{% assign debris_sensor = publications | where: 'permalink', '/publications/debris-sensor/' | first %}
-{% for publication in publications %}
-  {% assign post = publication %}
-  {% if post.permalink == '/publications/debris-sensor/' %}{% continue %}{% endif %}
-  {% if post.permalink == '/publications/shaft-pose-sensors/' and debris_sensor %}
-    {% assign current_post = post %}
-    {% assign post = debris_sensor %}
-    {% include archive-single.html %}
-    {% assign post = current_post %}
-  {% endif %}
-  {% include archive-single.html %}
-{% endfor %}
+{% include publications-list.html %}

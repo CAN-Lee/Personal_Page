@@ -1,0 +1,16 @@
+{% include base_path %}
+{% assign publications = site.publications | sort: 'date' | reverse %}
+{% assign earlier_papers = '/publications/cylindrical-assembly/|/publications/countersunk-assembly/|/publications/debris-sensor/' | split: '|' %}
+{% for publication in publications %}
+  {% assign post = publication %}
+  {% if earlier_papers contains post.permalink %}{% continue %}{% endif %}
+  {% if post.permalink == '/publications/shaft-pose-sensors/' %}
+    {% assign current_post = post %}
+    {% for paper_permalink in earlier_papers %}
+      {% assign post = publications | where: 'permalink', paper_permalink | first %}
+      {% if post %}{% include archive-single.html %}{% endif %}
+    {% endfor %}
+    {% assign post = current_post %}
+  {% endif %}
+  {% include archive-single.html %}
+{% endfor %}

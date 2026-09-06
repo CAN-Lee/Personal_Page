@@ -1,6 +1,12 @@
 main:
+  - title: "Intro"
+    url: /
+
   - title: "Publications"
     url: /publications/
 
   - title: "Research & Development"
     url: /portfolio/
+
+  - title: "Work Experience"
+    url: /work-experience/
