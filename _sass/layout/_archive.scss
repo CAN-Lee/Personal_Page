@@ -258,9 +258,9 @@ html[data-theme="dark"] .project__item {
   grid-template-columns: 140px minmax(0, 1fr);
   align-items: center;
   gap: 28px;
-  min-height: 150px;
+  min-height: 120px;
   margin-bottom: 18px;
-  padding: 26px;
+  padding: 16px 26px;
   border-radius: 8px;
   background: #fbfbfb;
   box-shadow: 0 5px 16px rgba(0, 0, 0, 0.08);
@@ -289,8 +289,8 @@ html[data-theme="dark"] .project__item {
   @media (max-width: 600px) {
     grid-template-columns: 80px minmax(0, 1fr);
     gap: 16px;
-    padding: 18px 14px;
-    min-height: 130px;
+    padding: 12px 14px;
+    min-height: 110px;
     .work-experience__logo { height: 70px; padding: 4px; }
     h2 { font-size: 0.9em; overflow-wrap: anywhere; }
   }
