@@ -3,7 +3,7 @@ title: Physics-grounded World Model from Videos/Images
 date: 2025-06-01 00:00:00.000000000 +00:00
 role: Research intern
 organization: "<a href='https://www.a4x.io/'>A4x (Rightly Robotics)</a>, Hangzhou, China"
-period: 2025.08 -- 2026.07
+period: 2025.09 -- 2026.08
 collection: portfolio
 permalink: "/portfolio/world-model/"
 ---
