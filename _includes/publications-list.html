@@ -4,6 +4,7 @@
 {% assign earlier_papers = '/publications/cylindrical-assembly/|/publications/countersunk-assembly/|/publications/debris-sensor/' | split: '|' %}
 {% for publication in publications %}
   {% assign post = publication %}
+  {% if post.permalink == '/publications/deformsmith/' %}{% continue %}{% endif %}
   {% if earlier_papers contains post.permalink %}{% continue %}{% endif %}
   {% if post.permalink == '/publications/shaft-pose-sensors/' %}
     {% assign current_post = post %}
@@ -14,6 +15,12 @@
     {% assign post = current_post %}
   {% endif %}
   {% include archive-single.html %}
+  {% if post.permalink == '/publications/deformmaster/' %}
+    {% assign current_post = post %}
+    {% assign post = publications | where: 'permalink', '/publications/deformsmith/' | first %}
+    {% if post %}{% include archive-single.html %}{% endif %}
+    {% assign post = current_post %}
+  {% endif %}
   {% if include.collapse and post.permalink == '/publications/raco-slam/' and forloop.last == false %}
     {% assign collapsed_papers = true %}
 <details class="publications-more">

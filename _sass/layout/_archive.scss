@@ -7,7 +7,10 @@
 
   > p a,
   > p a:hover,
-  > p a:focus {
+  > p a:focus,
+  .homepage-bio a,
+  .homepage-bio a:hover,
+  .homepage-bio a:focus {
     text-decoration: none;
   }
 

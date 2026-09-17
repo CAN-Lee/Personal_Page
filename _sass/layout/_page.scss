@@ -359,6 +359,10 @@
   .project-image-pair {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
+    &.project-image-pair--demos {
+      // The scene is 4:3 and the close-up is square; preserve both at equal height.
+      grid-template-columns: minmax(0, 4fr) minmax(0, 3fr);
+    }
     &.project-image-pair--two {
       // Match rendered heights using each image's intrinsic aspect ratio.
       grid-template-columns: minmax(0, 8829fr) minmax(0, 11920fr);
