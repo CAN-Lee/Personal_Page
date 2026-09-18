@@ -1,6 +1,6 @@
 ---
 title: Embodied Force-Tactile Real-to-Sim-to-Real Manipulation
-date: 2026-09-01 00:00:00.000000000 +00:00
+date: 2025-05-01 00:00:00.000000000 +00:00
 role: Research intern
 organization: "<a href='https://www.shlab.org.cn/'>Shanghai AI Lab</a>, Shanghai, China"
 period: 2026.09 -- Now
